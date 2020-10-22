@@ -1,0 +1,202 @@
+.page-dashboard .page-content-wrapper-dashboard {
+     min-width: 0;
+        width: 100%;
+        
+}
+.page-content-wrapper-dashboard .judul{
+    color: rgb(253, 141, 50);
+    /* background: tomato; */
+    /* border-radius: 10px; */
+}
+
+
+
+/* Sidebar style */
+.sidebar-warapper{
+      min-height: 100vh;
+      /* height: 100vh; Add height */
+       overflow-y: auto;  
+       overflow-x: hidden;   
+      background: rgb(253, 237, 215);
+      padding-left: 10px;
+      padding-right: 10px;
+      
+      width: 18rem;
+}
+.sidebar-warapper .sidebar-heading a{
+    color: tomato;
+    font-weight: bold;
+    text-decoration: none;
+}
+.sidebar-warapper .list-group-item{
+    margin-bottom: 20px;
+    border: none;
+    width: 100%;
+    border-radius: 14px;
+}
+.sidebar-warapper .active{
+    background: linear-gradient(270deg, rgb(252, 98, 71) 1%, rgb(253, 205, 213) 100%);
+    border-right: 4px solid #ff0000;
+    color: rgb(34, 32, 32);
+    font-weight: bold;
+    border-radius: 6px;
+}
+/* style mobile sidebar */
+.sidebar-mobile{
+      /* height: 100vh; Add height */   
+      /* padding-left: 10px;
+      padding-right: 10px; */
+      
+}
+.page-content-wrapper-dashboard .sidebar-heading{
+    background: #ffe6c4;
+    padding: 10px;
+}
+.page-content-wrapper-dashboard .sidebar-heading a{
+    color: rgb(201, 30, 0);
+    text-decoration: none;
+}
+.sidebar-mobile .list-group-item{
+    background: #e9e8e8;
+    margin-bottom: 10px;
+    border: none;
+    width: 100%;
+    border-radius: 14px;
+}
+.sidebar-mobile .active{
+    background: linear-gradient(270deg, rgb(252, 98, 71) 1%, rgb(253, 205, 213) 100%);
+    border-right: 4px solid #ff0000;
+    color: rgb(34, 32, 32);
+    font-weight: bold;
+    border-radius: 6px;
+}
+/* profile dashboard */
+.sidebar-profile{
+    background: white;
+    padding: 0;
+}
+ .page-content-wrapper-dashboard-profile{
+    background: #f5f5fb;
+    /* height: 100vh;
+    min-width: 100vh; */
+    padding-top: 20px;
+    width: 100%;
+}
+.sidebar-profile .img-profile img{
+    height: 140px;
+    width: 140px;
+    object-fit: cover;
+}
+.sidebar-profile .list-group-item{
+    background: none;
+    border-radius: unset;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+.sidebar-profile .active{
+    background: linear-gradient(270deg, rgba(255, 113, 88, 0.32) 2%,
+        rgba(255, 255, 255, 0) 100%);
+    border-right: 4px solid #ff0000;
+    color: rgb(34, 32, 32);
+    font-weight: bold;
+
+}
+.mobile-menu a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 14px;
+    color: rgb(177, 133, 68);
+}
+.mobile-menu .active{
+    font-weight: bold;
+    color: tomato;
+}
+.mobile-menu i{
+    font-size: 16px;
+}
+.page-content-wrapper-dashboard-profile{
+    padding-bottom: 150px;
+    min-height: 100vh;
+}
+.page-content-wrapper-dashboard-profile .statis .dashboard-card-title{
+    color: rgb(252, 98, 71);
+    font-weight: 500;
+      font-size: 18px;
+}
+.page-content-wrapper-dashboard-profile .statis .dashboard-card-subtitle{
+    font-size: 22px;
+    line-height: 24px;
+    color: #a08787; 
+    font-weight: 400;
+}
+.page-content-wrapper-dashboard-profile .dashboard-heading .dashboard-title{
+    font-weight: 400;
+}
+.page-content-wrapper-dashboard-profile .dashboard-heading .dashboard-subtitle{
+    font-weight: 400;
+    color: #a08787; 
+}
+.card-list-kelas {
+    margin-bottom: 14px;
+}
+.card-list-kelas img{
+    border-radius: 4px;
+}
+.card-list-kelas .card-body{
+    font-size: 18px;
+    /* line-height: 40px; */
+    color: #090a50;
+    text-decoration: none;
+}
+.card-list-kelas .card-body .kelas-full{
+    color: rgb(255, 255, 255);
+    background-color: rgb(250, 55, 20);
+    /* padding: 2px; */
+    border-radius: 3px;
+}
+.kelas-statis a{
+    text-decoration: none;
+    color: unset;
+}
+.kelas-statis .card{
+    border: none;
+}
+.kelas-heading img{
+    object-fit: cover;
+    max-width: 40px;
+    height: 40px;
+}
+.kelas-heading h6{
+    font-size: 14px;
+    font-weight: bold;
+}
+.kelas-heading p{
+    font-size: 12px;
+    line-height: 4px;
+}
+.banner-kelas img{
+    height: 175px;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px 25px 8px 25px;
+}
+.banner-kelas{
+    font-size: 14px;
+    font-weight: bold;
+}
+.banner-kelas .half{
+    color:  rgb(190, 85, 0);
+}
+.banner-kelas .progres{
+    color: tomato;
+}
+.banner-kelas .student{
+    color: rgb(134, 131, 131);
+}
+.cek{
+    padding: 8px;
+    border-radius: 25px 5px 25px 25px;
+    margin-top: -10px;
+}

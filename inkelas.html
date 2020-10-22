@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Assistant:200,400,700&&display=swap" rel="stylesheet" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Lawyers Technology</title>
+</head>
+<div class="page-dashboard">
+    <div class="d-flex" id="wrapper">
+
+        <!-- sidebar -->
+        <!-- <section id="mapel2"> -->
+        <div class="sidebar border-right d-md-block d-none sidebar-warapper ">
+
+            <div class="sidebar-heading py-5 text-center">
+                <a href="dashboard..html">
+                    <i class="fas fa-arrow-left"></i> Kembali Ke Home
+                </a>
+            </div>
+
+
+            <div class="list-group list-group-flush ">
+                <div class="side" v-for="(video, index) in videos" :key="video.id">
+                    <a href="#" @click="changeActive(index)" class="list-group-item list-group-item-action"
+                        :class="{ active: index == activeVideo }">
+                        {{ video.title }}
+                        <!-- <div v-if="video.selesai">
+                            <i class="fal fa-caret-left"></i>
+                        </div>
+                        <div v-else>
+                            <i class="fas fa-caret-right"></i>
+                        </div> -->
+                        <!-- <div class="chek" v-else>
+                            <i class="fas fa-check-circle"></i>
+                        </div> -->
+
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- end sidebar -->
+        <!-- page content -->
+        <div class="page-content-wrapper-dashboard">
+
+            <div class="row d-block d-md-none">
+                <div class="col ">
+                    <div class="sidebar-heading">
+                        <a href="dashboard.html">
+                            <i class="fas fa-arrow-left"></i> Kembali Ke Home
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-md-6">
+                        <div class="judul">
+                            <!-- <h3 v-if="video[activeVideo].selesai">Video ini sudah di tonton</h3> -->
+                            <h3>{{ videos[activeVideo].title }}</h3>
+
+                        </div>
+                        <div class="sub-judul">
+                            <h6>{{ videos[activeVideo].subtitle }}</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="row my-4 justify-content-center">
+                    <div class="col-md-10">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <transition>
+                                <iframe class="embed-responsive-item" :key="videos[activeVideo].id"
+                                    :src="videos[activeVideo].url" allowfullscreen>
+                                </iframe>
+
+                        </div>
+                        <a href="#" class="btn btn-warning btn-block mt-4" v-on:click="belajarSelesai()"
+                            v-if="videos[activeVideo].id == this.videos.length">Selesai</a>
+                        <a href="#" class="btn btn-warning btn-block mt-4" v-on:click="tandaiSelesai" v-else>Next
+                            Video</a>
+                        </transition>
+                    </div>
+                </div>
+                <div class="sidebar-mobile d-block d-md-none">
+                    <div class="list-group list-group-flush">
+                        <div class="side" v-for="(video, index) in videos" :key="video.id">
+                            <a href="#" @click="changeActive(index)" class="list-group-item list-group-item-action"
+                                :class="{ active: index == activeVideo }">
+                                {{ video.title }}
+
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- </section> -->
+        <!-- section end vue -->
+    </div>
+
+</div>
+
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="vue/vue.js"></script>
+    <script>
+        var wrapper = new Vue({
+            el: "#wrapper",
+
+            data: {
+                activeVideo: 0,
+                videoSelesai: 1,
+                videos: [
+                    {
+                        id: 1,
+                        url: "https://www.youtube.com/embed/Qz6XNSB0F3E",
+                        title: "Agar Kerja Relax",
+                        subtitle: "Dengarkan Lagu Santai Ini",
+                        selesai: false,
+                    },
+                    {
+                        id: 2,
+                        url: "https://www.youtube.com/embed/zpOULjyy-n8?rel=0",
+                        title: "Judul",
+                        subtitle: "Ini Adalah Sub Judul",
+                        selesai: false,
+                    },
+                    {
+                        id: 3,
+                        url: "https://www.youtube.com/embed/zpOULjyy-n8?rel=0",
+                        title: "Judul 3",
+                        subtitle: "Dengarkan Lagu dari Arillaso",
+                        selesai: false,
+                    },
+                    {
+                        id: 4,
+                        url: "https://www.youtube.com/embed/DpQzuCBAAVo",
+                        title: "Cara Agar Semangat Kereja",
+                        subtitle: "Dengarkan Lagu dari Arillaso",
+                        selesai: false,
+                    },
+                    {
+                        id: 5,
+                        url: "https://www.youtube.com/embed/DpQzuCBAAVo",
+                        title: "Cara Agar Semangat Kereja",
+                        subtitle: "Dengarkan Lagu dari Arillaso",
+                        selesai: false,
+                    },
+
+                ],
+            },
+            methods: {
+                changeActive(id) {
+                    this.activeVideo = id;
+                },
+                tandaiSelesai() {
+                    this.activeVideo += 1;
+                    this.selesai = true;
+                    this.videoSelesai = + 1;
+                    // if (this.activeVideo <= this.videos.length) {
+                    //     this.activeVideo += 1;
+                    //     this.selesai = true;
+                    //     this.videoSelesai = + 1;
+                    //     // this.activeVideo += 0;
+                    //     // window.location.href = 'index.html'
+                    // }
+
+                },
+                belajarSelesai() {
+                    window.location.href = 'index.html'
+                }
+
+            },
+
+        });
+    </script>
+
+</body>
+
+</html>
