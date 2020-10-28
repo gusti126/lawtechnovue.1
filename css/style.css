@@ -303,6 +303,70 @@ header p {
     color: #525252;
     line-height: 180%;
 }
+/* page kelas.html */
+.kategori .btn-kategori{
+  background: rgb(253, 191, 132);
+  color: rgb(255, 255, 255);
+      padding: .2rem .5rem;
+    font-size: .85rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+.heading-kelas1{
+  background: #cef1ff;
+  background-size: cover;
+}
+.heading-kelas1 .info-heading{
+  text-align: center;
+}
+.heading-kelas1 h1{
+  color: #15346f;
+  margin-top: 80px;
+  font-weight: 700;
+}
+.heading-kelas1 .jumbotron{
+  
+  padding-top: unset;
+  
+
+}
+.kelas{
+  background: rgb(251, 254, 255);
+}
+.kelas a{
+  text-decoration: none;
+  color: unset;
+}
+.kelas .kelas-heading img{
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+}
+.kelas-heading .kategori{
+  font-size: 14px;
+  color: #8a8787;
+}
+.kelas .sertifikat{
+  object-fit: unset;
+  width: 30px;
+  height: 30px;
+  border-radius: unset;
+}
+.kelas p{
+  line-height: 5px;
+}
+.kelas img{
+      border-radius: 8px 25px 8px 25px;
+      height: 175px;
+    width: 100%;
+    object-fit: cover
+}
+.kelas .level{
+  /* font-size: 14px; */
+  color: #636262;
+}
+/* filter gallery */
+
 
 /* sidebar */
 
@@ -331,4 +395,8 @@ header p {
     margin-top: 60px;
     text-align: left;
 }
+  /* page kelas.html */
+  .heading-kelas1 .info-heading{
+    text-align: left;
+  }
  }

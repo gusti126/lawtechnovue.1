@@ -109,7 +109,7 @@
 }
 .mobile-menu .active{
     font-weight: bold;
-    color: tomato;
+    color: rgb(253, 38, 0);
 }
 .mobile-menu i{
     font-size: 16px;
@@ -227,9 +227,68 @@
     line-height: 2px;
     font-size: 12px;
 }
-#editor{
-    overflow-y: auto;
+.page-content-wrapper-dashboard-forum{
+       background-size: cover;
+       background-position: center;
+    /* padding-top: 10px; */
+    width: 100%;
+    
 }
-.ql-container{
-    overflow-y: auto;
+.forum a{
+    text-decoration: unset;
+    color: unset;
 }
+.forum .card{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background: #ffffff;
+    min-height: 100vh;
+    margin-top: -18px;
+    border-radius: 20px 20px 10px 10px;
+}
+@media (max-width: 991.98px) { 
+    .forum .card{
+        padding-top: 20px;
+        background: #ffffff;
+        min-height: 100vh;
+        margin-top: -18px;
+        border-radius: 20px 20px 10px 10px;
+    }
+ }
+ .forum .card .follow-forum h6{
+     color: cadetblue;
+     line-height: 4px;
+     font-size: 12px;
+ }
+ .btn-tambah-forum{
+     position: absolute;
+     margin-top: -35px;
+     margin-bottom: 10px;
+     background-color: tomato ;
+     padding: 10px;
+     color: white;
+ }
+ .title-forum h6{
+     margin-top: 10px;
+     font-size: 18px;
+     color: rgb(32, 32, 32);
+ }
+ 
+ .forum .main img{
+     height: 165px;
+     width: 100%;
+     object-fit: cover;
+
+ }
+ @media (max-width: 991.98px){
+     .title-forum h6{
+        font-size: 1rem;
+        color: rgb(32, 32, 32);
+    }
+    .forum .main img{
+        height: auto;
+        width: 100%;
+        object-fit: unset;
+
+    }
+ }
